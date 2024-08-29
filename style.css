@@ -1,0 +1,76 @@
+@font-face {
+  font-family: font;
+  src: url(./fonts/helvetica-now-text-regular-woff-2-4479bd.ttf);
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: font;
+}
+html, body {
+  height:100%;
+  width:100%;
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+
+
+}
+#page1 video{
+  height: 100%;
+  width: 100% ;
+  object-fit: cover;
+}
+/* page 1 ends here */
+#page2{
+  height: 50vh;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page3 starts here */
+#page3{
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
