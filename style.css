@@ -11,6 +11,33 @@
 html, body {
   height:100%;
   width:100%;
+  padding:0 10px;
+  background-color: rgb(255, 242, 224);
+}
+.button{
+  padding: 15px 15px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 10px;
+
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+}
+.button::after{
+  position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 124, 163);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.button:hover::after{
+  bottom: 0;
+  border-radius: 0;
 }
 #page1{
   height: 100vh;
@@ -19,15 +46,51 @@ html, body {
 
 }
 #page1 video{
-  height: 100%;
+  min-height: 100%;
   width: 100% ;
   object-fit: cover;
 }
+#page1 #head{
+  margin-top: 10vh;
+  height: 100vh;
+  width: 100%;
+
+}
+#page1 #head img{
+  height:  70vh;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-right-radius: 100px;
+}
+
+
 /* page 1 ends here */
+
+
 #page2{
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
+#page2 .swiper-slide{
+  position: relative;
+}
+#page2 img{
+  position: absolute;
+  z-index: 1;
+}
+#page2 .text{
+  position:absolute;
+  z-index: 1;
+  bottom: 5%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  left: 5%;
+}
+
 
 
 
@@ -53,7 +116,7 @@ html, body {
 #page3{
   height: 100vh;
   width: 100%;
-  
+
 }
 
 
