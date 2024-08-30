@@ -1,5 +1,12 @@
 /* important note page 3 is above to page 2 */
-
+#page1,
+#page2,
+#page3 {
+  position: relative;
+  /* Make pages relative to control z-index context */
+  z-index: 1;
+  /* Default z-index */
+}
 @font-face {
   font-family: font;
   src: url(./fonts/helvetica-now-text-regular-woff-2-4479bd.ttf);
@@ -56,7 +63,7 @@ body {
   min-height: 100%;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 /* moving text */
@@ -111,21 +118,39 @@ body {
 /* page3 starts here */
 #page3 {
   height: 100vh;
-  width: 100%;
+  width: 90%;
+  margin: 0 5vw;
 }
 
 #page3 #head {
   margin-top: 5vh;
   height: 100vh;
   width: 100%;
+
 }
 
-#page3 #head img {
-  height: 70vh;
+#page3 #head .head {
+  height: 77vh;
   width: 100%;
   object-fit: cover;
-  border-bottom-right-radius: 100px;
+  border-bottom-right-radius: 150px;
+  position: relative;
+  z-index: 4;
+
 }
+#page3 #head .intro{
+  position: absolute;
+  z-index: 5;
+bottom: 15vh;
+  left: 10vw;
+  background-color: #9C2677;
+  color: white;
+  font-size: 35px;
+  height: 30vh;
+  width: 50vw;
+  border-top-right-radius: 100px;
+}
+
 
 /*  */
 
@@ -155,3 +180,34 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   left: 5%;
 }
+/* page 2 ends here */
+
+/* page 4 yaha se start karna  hai */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
