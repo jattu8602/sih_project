@@ -26,15 +26,17 @@ body {
   padding: 0 10px;
   background-color: rgb(255, 242, 224);
 }
-
 .button {
   padding: 15px 15px;
-  border: 1px solid #8a8a8a89;
+  border: 1px solid white;
   border-radius: 10px;
-
+  font-weight: bold;
+  color: white;
   position: relative;
   transition: all ease 0.4s;
   overflow: hidden;
+  z-index: 1;
+  /* Ensures text is above the ::after element */
 }
 
 .button::after {
@@ -47,11 +49,18 @@ body {
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
+  z-index: -1;
+  /* Ensures the background stays behind the text */
 }
 
 .button:hover::after {
   bottom: 0;
   border-radius: 0;
+}
+
+.button:hover {
+  color: white;
+  /* Ensures the text color remains white on hover */
 }
 
 #page1 {
@@ -145,11 +154,36 @@ bottom: 15vh;
   left: 10vw;
   background-color: #9C2677;
   color: white;
-  
   height: 30vh;
   width: 50vw;
   border-top-right-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  gap: 20px;
 }
+
+#page3 #head .intro .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+#page3 #head .intro .texts h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+
+#page3 #head .intro .texts p {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
 
 
 /*  */
